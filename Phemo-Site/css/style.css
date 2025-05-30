@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+.hero {
+  background: url('../asset/images/les-lunettes-sont-posees-sur-l-ordinateur-portable-et-reflechissent-la-lumiere-de-l-ecran-dans-le-noir\ \(1\).jpg') no-repeat center center/cover;
+  padding: 150px 0;
+  text-align: center;
+  color: white;
+}
+.service-icon {
+  font-size: 2rem;
+  color: rgb(6, 79, 45);
+}
+.section-title {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+footer {
+  background:  rgb(6, 79, 45);
+  color: white;
+  padding: 30px 0;
+}
+
+
+/*******animations*******/
+/* Animation : état initial */
+.animate-on-load,
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Animation fade-in */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease;
+}
+
+/* Animation fade-in-up */
+.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
