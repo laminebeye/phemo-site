@@ -65,3 +65,22 @@ document.querySelector('#contact-form').addEventListener('submit', (e) => {
     e.target.elements.email.value = '';
     e.target.elements.message.value = '';
   });
+
+    const animatedSections = document.querySelectorAll('[data-animate]');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const el = entry.target;
+      if (entry.isIntersecting) {
+        el.classList.add('animate__fadeInUp');
+        el.classList.remove('animate__fadeOutDown');
+      } else {
+        el.classList.remove('animate__fadeInUp');
+        el.classList.add('animate__fadeOutDown');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  animatedSections.forEach(el => observer.observe(el));
